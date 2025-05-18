@@ -8,7 +8,7 @@ import json
 warnings.filterwarnings("ignore")
 
 # Defina sua chave de API Gemini aqui
-api_key = st.secrets["GOOGLE_API_KEY"]
+api_key = st.secrets["value"]
 os.environ["GOOGLE_API_KEY"] = api_key
 
 MODEL_ID = "gemini-2.0-flash"
