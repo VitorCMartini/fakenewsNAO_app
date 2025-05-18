@@ -8,9 +8,9 @@ import json
 warnings.filterwarnings("ignore")
 
 # Defina sua chave de API Gemini aqui
-os.environ["GOOGLE_API_KEY"] = "GEMINI_API_KEY"
+api_key = st.secrets["GOOGLE_API_KEY"]
+os.environ["GOOGLE_API_KEY"] = api_key
 
-api_key = st.secrets["gemini"]["GOOGLE_API_KEY"]
 MODEL_ID = "gemini-2.0-flash"
 
 # Funções para memória do chat
