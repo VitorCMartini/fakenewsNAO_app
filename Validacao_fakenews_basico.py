@@ -1,6 +1,6 @@
 import os
 import streamlit as st
-from google.generativeai import GenerativeModel as genai
+from google.generativeai import GenerativeModel
 from datetime import date
 import warnings
 import json
@@ -8,7 +8,7 @@ import json
 warnings.filterwarnings("ignore")
 
 # Defina sua chave de API Gemini aqui
-api_key = st.secrets["value"]
+api_key = st.secrets["GOOGLE_API_KEY"]
 os.environ["GOOGLE_API_KEY"] = api_key
 
 MODEL_ID = "gemini-2.0-flash"
